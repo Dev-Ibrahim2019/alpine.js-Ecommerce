@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .p-navbar-item {
+    @apply px-4 py-4;
+  }
+
+  header li a {
+    @apply block py-4 px-4  p-navbar-item transition-all  hover:bg-slate-700;    
+  }
+}
+
+.btn-primary {
+  @apply bg-purple-600 text-white py-2 px-3 rounded hover:bg-purple-700 active:bg-purple-800 transition-colors shadow-md;
+}
+
+.btn-emerald {
+  @apply bg-emerald-500 text-white py-2 px-3 rounded hover:bg-emerald-600 active:bg-emerald-700 transition-colors shadow-md;
+}
+
+.wysiwyg-editor {
+  @apply text-gray-600;
+}
+
+.wysiwyg-editor table td {
+  @apply px-2 py-1;
+}
+
+.wysiwyg-editor table tr td:nth-child(odd) {
+  @apply font-bold;
+}
+
+
